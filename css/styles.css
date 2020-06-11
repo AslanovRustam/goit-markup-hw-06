@@ -11,6 +11,7 @@
     --clients-color: #AFB1B8;
     --footer-copyrite: rgba(255, 255, 255, 0.4);
     --portfolio-border: #EEEEEE;
+    --backdrop: rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -867,7 +868,7 @@ img{
 .backdrop.is-hiden{
     opacity: 0;
     pointer-events: none;
-}
+  }
 .modal{
     position: absolute;
     top: 50%;
@@ -901,3 +902,24 @@ img{
     fill: red;
     justify-content: center;
     align-items: center;
+}
+
+.hero-button{
+    color: var(--white-text-color);
+    background-color: var(--accent-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 10px 32px;  
+    border: transparent;  
+    border-radius: 4px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-button:hover, .hero-button:focus{
+    color: var(--secondary-text-color);
+    background-color: var(--white-text-color);
+    cursor: pointer;
+}
