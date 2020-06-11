@@ -409,14 +409,42 @@
      </div>
       <p class="footer-end">2020 | Developed by GoIT Students </p>
     </footer>
-    <div class="backdrop is-hiden" data-modal>
+    <div class="backdrop " data-modal>
       <div class="modal">
       <button data-modal-close> 
         закрыть
       </button>
+      <h2>Оставьте свои данные, мы вам перезвоним</h2>
+      <form class="js-speaker-form">
+        <label for="name">Имя</label>
+        <input type="tel"  name="name" id="name">
+
+        <label for="tel">Телефон</label>
+        <input type="tel" name="tel" id="tel">
+
+        <label for="mail">Почта</label>
+        <input type="email" name="mail" id="mail">
+
+        <button type="submit">Отправить</button>
+      </form>
       </div>
     </div>
-
+    
     <script src="./js/modal.js"></script>
+    <script>
+      (() => {
+        document
+          .querySelector('.js-speaker-form')
+          .addEventListener('submit', e => {
+            e.preventDefault();
+
+            new FormData(e.currentTarget).forEach((value, name) =>
+              console.log(`${name}: ${value}`),
+            );
+
+            e.currentTarget.reset();
+          });
+      })();
+    </script>
   </body>
 </html>
