@@ -409,7 +409,7 @@
      </div>
       <p class="footer-end">2020 | Developed by GoIT Students </p>
     </footer>
-    <div class="backdrop " data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
       <button data-modal-close> 
         закрыть
@@ -425,7 +425,15 @@
         <label for="mail">Почта</label>
         <input type="email" name="mail" id="mail">
 
-        <button type="submit">Отправить</button>
+        <label for="coment">Комментарий</label>
+        <textarea name="coment" id="coment" cols="30" rows="10"></textarea>
+
+        <input type="checkbox" name="licence" id="licence">
+        <label for="licence">Соглашаюсь с рассылкой и принимаю 
+          <a href="">Условия договора</a>
+        </label>
+
+        <button type="submit" class="hero-button">Отправить</button>
       </form>
       </div>
     </div>
