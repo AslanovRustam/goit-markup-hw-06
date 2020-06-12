@@ -409,32 +409,44 @@
      </div>
       <p class="footer-end">2020 | Developed by GoIT Students </p>
     </footer>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-      <button data-modal-close> 
+      <button data-modal-close class="modal-close"> 
         закрыть
       </button>
       <h2>Оставьте свои данные, мы вам перезвоним</h2>
-      <form class="js-speaker-form">
-        <label for="name">Имя</label>
-        <input type="tel"  name="name" id="name">
+      <form class="form js-speaker-form">
+        <div class="form-field">
+          <label class="form-label" for="name">Имя</label>
+          <input type="tel"  name="name" id="name">
+        </div>
+        
+        <div class="form-field">
+          <label for="tel">Телефон</label>
+          <input class="field-input" type="tel" name="tel" id="tel">
+        </div>
+        
+        <div class="form-field">
+          <label for="mail">Почта</label>
+          <input class="field-input" type="email" name="mail" id="mail">
+        </div>
 
-        <label for="tel">Телефон</label>
-        <input type="tel" name="tel" id="tel">
-
-        <label for="mail">Почта</label>
-        <input type="email" name="mail" id="mail">
-
-        <label for="coment">Комментарий</label>
-        <textarea name="coment" id="coment" cols="30" rows="10"></textarea>
-
-        <input type="checkbox" name="licence" id="licence">
-        <label for="licence">Соглашаюсь с рассылкой и принимаю 
-          <a href="">Условия договора</a>
-        </label>
-
-        <button type="submit" class="hero-button">Отправить</button>
+        <div class="form-field">
+          <label for="coment">Комментарий</label>
+          <textarea name="coment" id="coment" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+          <input type="checkbox" name="licence" id="licence">
+          <label for="licence">Соглашаюсь с рассылкой и принимаю 
+             <a href="">Условия договора</a>
+          </label>
+        </div>
+  
+        
       </form>
+      <button type="submit" class="hero-button">Отправить</button>
+      
       </div>
     </div>
     

@@ -914,12 +914,26 @@ img{
 
     transform: translate(10px, -10px);
 }
-.modal-icon{
+/* .modal-icon{
     display: flex;
     width: 11px;
     height: 11px;
     fill: red;
     justify-content: center;
     align-items: center;
-}
+} */
 
+.form{
+    width: 448px;
+    outline: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+}
+.form-field{
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+}
+textarea {
+    resize: none;
+}
