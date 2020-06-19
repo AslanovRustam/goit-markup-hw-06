@@ -1010,6 +1010,9 @@ img{
     padding-bottom: 12px;
     
 }
+.textarea{
+    padding-left: 16px;
+}
 .form-subname{
     position: absolute;
     top: 50%;
@@ -1070,6 +1073,7 @@ img{
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
+  
 }
 .checkbox-icon{
     margin-right: 8px;
@@ -1078,6 +1082,8 @@ img{
     height: 15px;
     border: 1px solid #212121;
     border-radius: 4px;
+
+    cursor: pointer;
 
 }
 .checkbox:checked + .checkbox-icon{
@@ -1123,5 +1129,13 @@ img{
     background-size: contain;
     background-position: center;
 
+    cursor: pointer;
+
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    /* scale: (1, 2); */
+    /* transition: transform scale(0,5) cubic-bezier(0.4, 0, 0.2, 1); */
+}
+.form-close:hover{
+
+    transform: rotate(180deg);
 }
